@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>RSS Result Page</title>
+</head>
+<body>
+    <h1>RSS Reulst Page</h1>
+    <form action="{{url_for('download_report')}}">
+        <input type="submit" value="보고서 다운로드">
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Link</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in feed.entries %}
+            <tr>
+                <td>{{entry.title}}</td>
+                <td><a href="{{entry.link}}">{{entry.link}}</a></td>
+                <td>{{entry.description}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

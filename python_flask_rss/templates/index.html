@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <title>RSS Reader</title>
+</head>
+<body>
+    <h1>RSS Reader 주소 입력</h1>
+    <form method="post" action="{{url_for('rss')}}">
+        <label>RSS URL 주소를 입력하세요.</label><br>
+        <input type="text" id="rss_url" name="rss_url" size="40">
+        <button type="submit">확인</button>
+    </form>
+</body>
+</html>

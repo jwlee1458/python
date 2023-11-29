@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>자동 번역 프로그램</title>
+</head>
+<body>
+    <h1>자동 번역 프로그램</h1>
+    <form action="{{url_for('process')}}" method="post" enctype="multipart/form-data">
+        <label>번역할 파일을 업로드 해주세요.</label><br><br>
+        <input type="file" name="file">
+        <input type="submit" value="업로드">
+    </form>
+</body>
+</html>

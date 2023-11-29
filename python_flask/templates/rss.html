@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSS 결과 페이지</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>RSS 결과 페이지</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>제목</th>
+                <th>링크</th>
+                <th>요약</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in feed.entries%}
+            <tr>
+                <td>{{entry.title}}</td>
+                <td><a href="{{entry.link}}">{{entry.link}}</a></td>
+                <td>{{entry.description}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Analysis</title>
+</head>
+<body>
+    <h1>Log Analysis</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".log">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if results %}
+        <table border="1">
+            <tr>
+                <th>IP Address</th>
+                <th>Inbound Score</th>
+                <th>Outbound Score</th>
+                <th>Country</th>
+                <th>Country Code</th>
+                <th>Region</th>
+                <th>City</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+            </tr>
+            {% for result in results %}
+                <tr>
+                    <td>{{ result['ip_address'] }}</td>
+                    <td>{{ result['inbound_score'] }}</td>
+                    <td>{{ result['outbound_score'] }}</td>
+                    <td>{{ result['country'] }}</td>
+                    <td>{{ result['country_code'] }}</td>
+                    <td>{{ result['region'] }}</td>
+                    <td>{{ result['city'] }}</td>
+                    <td>{{ result['latitude'] }}</td>
+                    <td>{{ result['longitude'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</body>
+</html>

@@ -44,6 +44,18 @@ FTP 서비스 연결 및 자동화 (11/27)
 
 : python_flask_rss
 
-플라스크 - 파일 속성 리스트와 중요 정보 탐지 (11/28)
+플라스크 - 파일 속성 리스트와 중요 정보 탐지 (11/28-29)
 
 : python_flask_rss/test.py, python_flask_lists
+
+CriminalIP API 활용 및 아이피 필터 (11/29)
+
+: python_criminal, python_flask_criminal
+
+doc파일 문서 자동화 (11/29)
+
+: python_flask_doc
+
+Streamlit을 활용한 자동화 사례 (11/29)
+
+: python_streamlit

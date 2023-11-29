@@ -14,6 +14,7 @@
                 <th>파일 이름</th>
                 <th>파일 사이즈</th>
                 <th>파일 날짜</th>
+                <th>Email 탐지</th>
                 <th>파일 선택</th>
             </tr>
         </thead>
@@ -23,12 +24,16 @@
                 <td>{{file[0]}}</td>
                 <td>{{file[1]}}</td>
                 <td>{{file[2]}}</td>
+                <td>{% if file[3] %} <font color="red"><b>이메일 포함</b></font> {% else %} 이메일 미포함 {% endif %}</td>
                 <td><input type="checkbox" name="files" value="{{file[0]}}"></td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    <br><button type="submit">파일 압축하기</button>
+    <button type="submit">파일 압축하기</button>
+    {% if compressed_file %}
+    파일이 압축 완료되었습니다. 다운로드 : <a href="{{url_for('download', file=compressed_file)}}">{{compressed_file}}</a>
+    {% endif %}
     </form>
 </body>
 </html>

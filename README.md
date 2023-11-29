@@ -8,7 +8,7 @@
 
 : python_sk
 
-메일 자동화 업무 (11/24)
+메일 자동화 업무 (11/24, 27)
 
 : python_mail
 
@@ -16,6 +16,18 @@
 
 : python_crawl
 
-엑셀파일 자동화 (11/24)
+엑셀파일 자동화 (11/24, 27)
 
 : python_excel
+
+RSS 서비스 자동화 (11/27)
+
+: python_rss
+
+FTP 서비스 연결 및 자동화 (11/27)
+
+: python_ftp
+
+슬랙 API 활용 및 자동화 (11/27)
+
+: python_slack

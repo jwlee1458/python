@@ -1,0 +1,4 @@
+http://www.boannews.com/media/news_rss.xml?mkind=1
+http://www.dailysecu.com/rss/allArticle.xml
+https://www.mk.co.kr/rss/30300018/
+http://www.boannews.com/media/news_rss.xml?mkind=5

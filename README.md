@@ -58,4 +58,12 @@ doc파일 문서 자동화 (11/29)
 
 Streamlit을 활용한 자동화 사례 (11/29)
 
-: python_streamlit
+: python_streamlit/streamlit01.py
+
+MongoDB 제어 및 자동화 (11/30)
+
+: python_streamlit/str01-03.py
+
+Streamlit 수료증 자동 발급 서비스 (11/30)
+
+: python_streamlit/str04.py
